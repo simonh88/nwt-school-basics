@@ -10,6 +10,7 @@ function sortingNumbers () {
 // TEST 2 A COMPLETER
 function sortingObjects () {
   const sortMeObjects = [ { taille: 3 }, { taille: 1 }, { taille: 2 } ];
+  // TODO: Utiliser l'une des fonction de array pour sort ce tableau
   return sortMeObjects.sort( ( a, b ) => ( a.taille - b.taille ) );
 }
 
@@ -29,18 +30,18 @@ function addPropertyToObjects () {
 // console.log( sortingNumbers().toString() )
 sortingNumbers().toString() === [ 1, 2, 3, 4 ].toString() ?
   console.log( ' ++++++ sortingNumbers OK' ) :
-  console.log( ' ----- sortingNumbers NOK' );
+  console.log( ' ------ sortingNumbers NOK' );
 
 // TEST 2
 // UNCOMMENT BELLOW pour voir le résultat actuel de la fonctions
-// console.log( sortingObjects().toString() )
-sortingObjects().toString() === [ { taille: 3 }, { taille: 1 }, { taille: 2 } ].toString() ?
+// console.log( JSON.stringify( sortingObjects() ) )
+JSON.stringify( sortingObjects() ) === JSON.stringify( [ { taille: 1 }, { taille: 2 }, { taille: 3 } ] ) ?
   console.log( ' ++++++ sortingObjects OK' ) :
-  console.log( ' ----- sortingObjects NOK' );
+  console.log( ' ------ sortingObjects NOK' );
 
 // TEST 3
 // UNCOMMENT ME pour voir le résultat actuel de la fonctions
-// console.log( addPropertyToObjects() )
-addPropertyToObjects().toString() === [ { taille: 1, prenom: 'toto' }, { taille: 2, prenom: 'titi' }, { taille: 3, prenom: 'tata' } ].toString() ?
+// console.log( JSON.stringify(addPropertyToObjects()) )
+JSON.stringify( addPropertyToObjects() ) === JSON.stringify( [ { taille: 1, prenom: 'toto', nom: 'TUTU' }, { taille: 2, prenom: 'titi', nom: 'TUTU' }, { taille: 3, prenom: 'tata', nom: 'TUTU' } ] ) ?
   console.log( ' ++++++ addPropertyToObjects OK' ) :
-  console.log( ' ----- addPropertyToObjects NOK' );
+  console.log( ' ------ addPropertyToObjects NOK' );
