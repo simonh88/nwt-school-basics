@@ -30,18 +30,18 @@ function addPropertyToObjects () {
 // console.log( sortingNumbers().toString() )
 sortingNumbers().toString() === [ 1, 2, 3, 4 ].toString() ?
   console.log( ' ++++++ sortingNumbers OK' ) :
-  console.log( ' ----- sortingNumbers NOK' );
+  console.log( ' ------ sortingNumbers NOK' );
 
 // TEST 2
 // UNCOMMENT BELLOW pour voir le résultat actuel de la fonctions
 // console.log( JSON.stringify( sortingObjects() ) )
 JSON.stringify( sortingObjects() ) === JSON.stringify( [ { taille: 1 }, { taille: 2 }, { taille: 3 } ] ) ?
   console.log( ' ++++++ sortingObjects OK' ) :
-  console.log( ' ----- sortingObjects NOK' );
+  console.log( ' ------ sortingObjects NOK' );
 
 // TEST 3
 // UNCOMMENT ME pour voir le résultat actuel de la fonctions
 // console.log( JSON.stringify(addPropertyToObjects()) )
 JSON.stringify( addPropertyToObjects() ) === JSON.stringify( [ { taille: 1, prenom: 'toto', nom: 'TUTU' }, { taille: 2, prenom: 'titi', nom: 'TUTU' }, { taille: 3, prenom: 'tata', nom: 'TUTU' } ] ) ?
   console.log( ' ++++++ addPropertyToObjects OK' ) :
-  console.log( ' ----- addPropertyToObjects NOK' );
+  console.log( ' ------ addPropertyToObjects NOK' );
